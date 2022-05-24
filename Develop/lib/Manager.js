@@ -17,12 +17,11 @@ class Manager extends Employee {
     getEmployeeIcon() {
         return "fas fa-mug-hot"
     }
-
     getEmployeeData() {
-        return this.officeNumber
-    }
-    getEmployeeInfo() {
         return "Office Number"
+    }
+    getEmployeeDataValue() {
+        return this.officeNumber
     }
 
 }

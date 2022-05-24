@@ -20,10 +20,10 @@ class Intern extends Employee {
     }
 
     getEmployeeData() {
-        return this.school
-    }
-    getEmployeeInfo() {
         return "School"
+    }
+    getEmployeeDataValue() {
+        return this.school
     }
 
 }
