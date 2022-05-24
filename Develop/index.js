@@ -118,7 +118,7 @@ function employeeEngineer(typeEmployee) {
         .then(({ name, Id, email }) => {
             return inquirer.prompt(engineerQuestion)
                 .then(({ github }) => {
-                    const engineer = new Engineer(typeEmployee, name, Id, email, github);
+                    const engineer = new Engineer(name, Id, email, github);
                     teamCards(engineer)
                     engineerCardsArray.push(teamCards(engineer))
 
@@ -131,7 +131,7 @@ function employeeIntern(typeEmployee) {
         .then(({ name, Id, email }) => {
             return inquirer.prompt(internQuestion)
                 .then(({ school }) => {
-                    const intern = new Intern(typeEmployee, name, Id, email, school);
+                    const intern = new Intern(name, Id, email, school);
                     teamCards(intern);
                     internCardsArray.push(teamCards(intern))
                     promptUser();
