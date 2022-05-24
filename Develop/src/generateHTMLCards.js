@@ -12,7 +12,7 @@ const teamCards = (employee) => {
               <ul class="list-group">
                 <li class="list-group-item">ID: ${employee.getId()}</li>
                 <li class="list-group-item">Email: <a href="mailto:${employee.getEmail()}" >${employee.getEmail()}</a></li>
-                <li class="list-group-item">${employee.getEmployeeInfo()}: ${employee.getEmployeeData()}</li>
+                <li class="list-group-item">${employee.getEmployeeData()}: ${employee.getEmployeeDataValue()}</li>
               </ul> 
             </div>
           </div>

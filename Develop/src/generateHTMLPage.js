@@ -1,5 +1,5 @@
 
-
+// Template for the Html page
 const generateHTML = htmlContent => {
   return `
 
@@ -20,7 +20,7 @@ const generateHTML = htmlContent => {
       <div class="card-header row justify-content-center" style="background-color:red">
           <h1 class="p-3 font-weight-bold text-light"> My Team</h1>
       </div>
-      <div class="card-body row justify-content-center">
+      <div class="card-body col-12 row  d-flex justify-content-center">
         <div class="card-deck d-flex">
             ${htmlContent}
         </div>
@@ -30,5 +30,11 @@ const generateHTML = htmlContent => {
 </html> `;
 
 }
-
+// {/* <div class="container">
+// <div class="row">
+//     <div class="row team-area col-12 d-flex justify-content-center">
+//         ${generateTeam(team)}
+//     </div>
+// </div>
+// </div> */}
 module.exports = generateHTML
